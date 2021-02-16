@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+	
+  </head>
+  <body>
+  <!-- App Bar -->
+	<!--div data-role="appbar" data-expand-point="md">
+		<a href="#" class="brand no-hover">
+			<span style="width: 55px;" class="p-2 border bd-dark border-radius">
+				m<sup>4</sup>
+			</span>
+		</a>
+
+		<ul class="app-bar-menu">
+			<li><a href="#">Home</a></li>
+			<li>
+				<a href="#" class="dropdown-toggle">Products</a>
+				<ul class="d-menu" data-role="dropdown">
+					<li><a href="#">Windows 10</a></li>
+					<li><a href="#">Office 365</a></li>
+					<li class="divider bg-lightGray"></li>
+					<li><a href="#">Skype</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+	</div-->
+	<div data-role="splitter" class="h-100">
+    <div class="d-flex flex-justify-center flex-align-center">
+    
+	<!-- Tiles -->
+	<div class="tiles-grid tiles-group" data-group-title="General">
+		<a href="https://github.com/olton/Metro-UI-CSS"
+				data-role="tile" class="bg-indigo">
+			<span class="mif-github icon"></span>
+			<span class="branding-bar">Github</span>
+			<span class="badge-bottom">30</span>
+		</a>
+		<div data-role="tile" class="bg-cyan">
+			<span class="mif-envelop icon"></span>
+			<span class="branding-bar">Email</span>
+			<span class="badge-bottom">10</span>
+		</div>
+		<div data-role="tile" class="bg-cyan">
+			<span class="mif-table icon"></span>
+			<span class="branding-bar">Tables</span>
+		</div>
+		<div data-role="tile" class="bg-cyan">
+			<span class="mif-table icon"></span>
+			<span class="branding-bar">Tables</span>
+		</div>
+		<!--div data-role="tile" class="bg-orange" data-size="wide">
+			<span class="mif-chrome icon"></span>
+			<span class="branding-bar">Chrome</span>
+		</div>
+		<div data-role="tile" data-size="small">
+			<span class="mif-apple icon"></span>
+		</div>
+		<div data-role="tile" data-size="small" class="bg-red">
+			<span class="mif-bell icon"></span>
+		</div>
+		<div data-role="tile" data-size="small" class="bg-teal col-1 row-6">
+			<span class="mif-windows icon"></span>
+		</div>
+		<div data-role="tile" data-size="small" class="bg-brown col-2 row-6">
+			<span class="mif-wind icon"></span>
+		</div>
+		<div data-role="tile" class="bg-cyan">
+			<span class="mif-table icon"></span>
+			<span class="branding-bar">Tables</span>
+		</div-->
+	</div>
+	<div class="d-flex flex-justify-center flex-align-center">
+	<p>panel 2</p>
+		<!--div id="myData"></div-->
+		<table class="table striped table-border mt-4"
+			   data-role="table"
+			   data-source="http://break-ecsal-18fhm7llnla6s-1429532717.us-east-2.elb.amazonaws.com/api/threads">
+		</table>
+	</div>
+</div>
+</div>
+
+	<!-- Bottom Navigation -->
+	<!--div class="bottom-nav pos-absolute">
+		<button class="button">
+			<span class="icon mif-plus"></span>
+			<span class="label">Add</span>
+		</button>
+		<button class="button">
+			<span class="icon mif-favorite"></span>
+			<span class="label">Favorites</span>
+		</button>
+		<button class="button">
+			<span class="icon mif-search"></span>
+			<span class="label">Search</span>
+		</button>
+	</div-->
+
+	<!--script>
+		fetch('http://break-ecsal-18fhm7llnla6s-1429532717.us-east-2.elb.amazonaws.com/api/threads', {mode:'no-cors'})
+			.then(response => response.json())
+			.then(data => appendData(data))
+			.catch(err => console.log('error:', err));
+			
+		function appendData(data) {
+			var mainContainer = document.getElementById("myData");
+			for(var i = 0; i < data.length; i++) {
+				var div = document.createElement("div");
+				div.innerHTML = data[i].id + ' ' + data[i].title + ' ' + data[i].createdBy;
+				mainContainer.appendChild(div);
+			}
+		}
+	</script-->
+	<!-- Metro 4 -->
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+  </body>
+</html>
